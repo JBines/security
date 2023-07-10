@@ -67,6 +67,7 @@ From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New
    * **Group type** - Security
    * **Group name** - Secure Workstation Users
    * **Membership type** - Assigned
+   * **Role-assignable** - Yes
 
 1. Add your secure workstation user: `secure-ws-user@contoso.com`
 1. You can add any other users that will be using secure workstations.
@@ -76,6 +77,7 @@ From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New
    * **Group type** - Security
    * **Group name** - Secure Workstation Admins
    * **Membership type** - Assigned
+   * **Role-assignable** - Yes
 
 1. Add your secure workstation user: `secure-ws-admin@contoso.com`
 1. You can add any other users that will be managing secure workstations.  
@@ -85,6 +87,7 @@ From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New
    * **Group type** - Security
    * **Group name** - Emergency BreakGlass
    * **Membership type** - Assigned
+   * **Role-assignable** - Yes
   
 1. Select **Create**.
 1. Add Emergency Access accounts to this group.
@@ -93,6 +96,7 @@ From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New
    * **Group type** - Security
    * **Group name** - Secure Workstations
    * **Membership type** - Dynamic Device
+   * **Role-assignable** - Yes
    * **Dynamic Membership rules** - `(device.devicePhysicalIds -any _ -contains "[OrderID]:PAW")`
 
 1. Select **Create**.
